@@ -3,101 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic Adventure Tours</title>
-    <style>
-        /* Reset default margin and padding */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header styles */
-        header {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        /* Navigation styles */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Main section styles */
-        .main-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        /* Call-to-action button styles */
-        .cta-button {
-            background-color: #ff6600;
-            color: #fff;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #ff4500;
-        }
-    </style>
+    <title>Cosmic Apartments</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your custom styles here -->
 </head>
 <body>
     <header>
-        <h1>Cosmic Adventure Tours</h1>
+        <h1>Cosmic Apartments</h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#destinations">Destinations</a>
+            <a href="#home">Home</a>
+            <a href="#apartments">Apartments</a>
             <a href="#contact">Contact</a>
         </nav>
+        <button class="cta-button">Book Now</button>
     </header>
 
-    <section id="about" class="main-section">
-        <h2>About Us</h2>
-        <p>Embark on a journey beyond the stars with Cosmic Adventure Tours! Our expert crew will guide you through wormholes, nebulae, and alien civilizations.</p>
+    <section id="home">
+        <!-- Hero content here -->
     </section>
 
-    <section id="destinations" class="main-section">
-        <h2>Featured Destinations</h2>
-        <p>Choose from our otherworldly destinations:</p>
-        <ul>
-            <li>Galactic Safari on Zeta Prime</li>
-            <li>Lunar Base Camp on Titan's Moon</li>
-            <li>Stardust Cruise through Orion's Belt</li>
-        </ul>
-        <button class="cta-button">Book Now</button>
+    <section id="apartments">
+        <!-- Apartment listings here -->
     </section>
 
-    <section id="contact" class="main-section">
-        <h2>Contact Us</h2>
-        <p>Ready for liftoff? Reach out to our mission control:</p>
-        <p>Email: <a href="mailto:info@cosmicadventures.com">info@cosmicadventures.com</a></p>
+    <section id="booking-form">
+        <!-- Booking form here -->
     </section>
+
+    <section id="testimonials">
+        <!-- Testimonials here -->
+    </section>
+
+    <section id="contact">
+        <!-- Contact details here -->
+    </section>
+
+    <footer>
+        <p>© 2024 Cosmic Apartments. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com/CosmicApartments">Twitter</a>
+            <!-- Add more social media links -->
+        </div>
+    </footer>
 
     <!-- JavaScript (optional) -->
-    <script>
-        // Smooth scroll to sections when clicking navigation links
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = e.target.getAttribute('href');
-                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+    <script src="script.js"></script> <!-- Add your custom scripts here -->
 </body>
 </html>
