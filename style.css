@@ -1,5 +1,10 @@
 /* styles.css */
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Reset default margin and padding */
 body {
     margin: 0;
