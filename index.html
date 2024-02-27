@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Apartments</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add your custom styles here -->
+    <link rel="stylesheet" href="styles.css"> <!-- Add your custom CSS here -->
 </head>
 <body>
     <header>
@@ -18,30 +18,56 @@
     </header>
 
     <section id="home">
-        <!-- Hero content here -->
+        <h2>Welcome to Cosmic Apartments</h2>
+        <p>Your celestial home away from home!</p>
+        <img src="images/space-living-room.jpg" alt="Space Living Room">
     </section>
 
     <section id="apartments">
-        <!-- Apartment listings here -->
+        <h2>Our Stellar Apartments</h2>
+        <div class="apartment">
+            <img src="images/nebula-suite.jpg" alt="Nebula Suite">
+            <h3>Nebula Suite</h3>
+            <p>Anti-gravity beds, stardust views, and warp-speed Wi-Fi.</p>
+            <button class="book-button">Book Now</button>
+        </div>
+        <!-- Add more apartment listings -->
     </section>
 
-    <section id="booking-form">
-        <!-- Booking form here -->
+    <section id="area-benefits">
+        <h2>Explore the Cosmic Neighborhood</h2>
+        <ul>
+            <li>Walking distance to the Milky Way Café</li>
+            <li>Stunning views of the Orion Nebula</li>
+            <li>Zero-gravity yoga classes</li>
+        </ul>
     </section>
 
-    <section id="testimonials">
-        <!-- Testimonials here -->
+    <section id="reviews">
+        <h2>What Our Cosmic Travelers Say</h2>
+        <div class="review">
+            <p>"Best stay in the Andromeda Galaxy! 5 stars!"</p>
+            <p>- Captain Zara, Starship Voyager</p>
+        </div>
+        <!-- Add more reviews -->
     </section>
 
     <section id="contact">
-        <!-- Contact details here -->
+        <h2>Contact Us</h2>
+        <p>Ready for liftoff? Reach out:</p>
+        <form action="send_email.php" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
         <p>© 2024 Cosmic Apartments. All rights reserved.</p>
         <div class="social-links">
             <a href="https://twitter.com/CosmicApartments">Twitter</a>
-            <!-- Add more social media links -->
+            <a href="https://instagram.com/CosmicApartments">Instagram</a>
         </div>
     </footer>
 
