@@ -79,7 +79,20 @@
             </div>
         </footer>
     </div>
-    <!-- JavaScript (optional) -->
-    <script src="script.js"></script> <!-- Add your custom scripts here -->
+    <script>
+        const carousel = document.querySelector('.carousel');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % carousel.children.length;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 3000); // Automatisches Wechseln alle 3 Sekunden
+    </script>
 </body>
 </html>
