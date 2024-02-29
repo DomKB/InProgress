@@ -56,6 +56,20 @@ nav a {
     height: auto;
 }
 
+/* Stil für das Karussell */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
 /* Call-to-action button styles */
 .cta-button, .book-button {
     background-color: #ff6600;
