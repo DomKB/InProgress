@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Apartments</title>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
     <link rel="stylesheet" href="style.css"> <!-- Add your custom CSS here -->
 </head>
 <body>
@@ -36,9 +32,13 @@
                 <div class="mySlides fade">
                     <img src="images/space-living-room.jpg" alt="Space Living Room">
                 </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <!-- Dots -->
-            <div style="text-align: center;" class="dots">
+            <!-- Dots (indicators) -->
+            <div class="dot-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <!-- Add more dots for additional slides -->
@@ -109,12 +109,15 @@
             }
             slides[slideIndex - 1].style.display = "block";
         }
-        
-        // Next/previous controls
+
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-        
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
         // Call the initial slide
         showSlides(slideIndex);
     </script>
