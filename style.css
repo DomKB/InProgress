@@ -7,7 +7,7 @@ img {
 
 /* Reset default margin and padding */
 body {
-    margin: 10px;
+    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
