@@ -108,6 +108,12 @@
                 slides[i].style.display = "none";
             }
             slides[slideIndex - 1].style.display = "block";
+
+            const dots = document.getElementsByClassName("dot");
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            dots[slideIndex - 1].classList.add("active");
         }
         
         function plusSlides(n) {
