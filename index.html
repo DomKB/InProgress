@@ -94,20 +94,10 @@
         </footer>
     </div>
     <script>
-        let slideIndex = 1;
+       let slideIndex = 1;
 
         function showSlides(n) {
-            const slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
+            // Your existing showSlides function (as provided in previous responses)
         }
 
         function plusSlides(n) {
@@ -117,6 +107,25 @@
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
+
+        // Swipe functionality for touch devices
+        const slideshowContainer = document.querySelector('.slideshow-container');
+        let touchStartX = 0;
+
+        slideshowContainer.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        slideshowContainer.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const deltaX = touchEndX - touchStartX;
+
+            if (deltaX > 50) {
+                plusSlides(-1); // Swipe right
+            } else if (deltaX < -50) {
+                plusSlides(1); // Swipe left
+            }
+        });
 
         // Call the initial slide
         showSlides(slideIndex);
