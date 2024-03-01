@@ -57,18 +57,14 @@ nav a {
     height: auto;
 }
 
-/* Stil für das Karussell */
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.carousel img {
-    width: 100%;
-    height: auto;
+
+.mySlides {
+    display: none;
 }
 
 /* Call-to-action button styles */
